@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html forms</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Data form</h1>
+  <form action="/user-data" method="GET"> <!-- get -> to prevent errors when testing without form handling -->
+
+    <!-- name attribute - Name of the form control. Submitted with the form as part of a name/value pair -->
+    <section>
+      <h2>Your personal details</h2>
+      <ul>
+        <li>
+          <label for="username">Your name</label>
+          <input type="text" name="user-data" id="username" required placeholder="John Johnsky">
+          <!-- "required" is a boolean attribute attribute and makes this field required when submitting this form -->
+        </li>
+        <li>
+          <label for="useremail">Your email address</label>
+          <input type="email" name="user-email" id="useremail" required>
+        </li>
+
+        <li>
+          <label for="userpassword">Your password</label>
+          <input type="password" name="user-password" id="userpassword" required minlength="12">
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>...more details</h2>
+      <ul>
+        <li>
+          <label for="userage">Your age</label>
+          <input type="number" step="1" name="user-age" id="userage" required min="18" max="130">
+        </li>
+        <li>
+          <label for="userpbirthdate">Your birthdate</label>
+          <input type="date" name="user-birthdate" id="userbirthdate" required min="1921-01-01" max="2006-01-01">
+        </li>
+        <li>
+          <label for="favorite-color">Your favorite color?</label>
+          <select id="favorite-color" name="favorite-color">
+            <option value="blue">My favorite color is blue</option>
+            <!-- if there is a need for value sent to the server to be something different than what is displayed - use value attribute-->
+            <option>yellow</option>
+            <option>white</option>
+            <option>gray</option>
+          </select>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <label for="usermessage">Your message</label>
+      <textarea name="usermessage" name="user-message" id="usermessage" required rows="4"></textarea>
+      <!-- this element has closing tag -->
+    </section>
+
+    <section>
+      <h2> How should we verify your account?</h2>
+      <ul>
+        <!-- name attribute - Name of the form control. Submitted with the form as part of a name/value pair
+        ID should be unique, but names can be used to group radio buttons into one logic group to make a single-choice question form-->
+        <li class="form-control-inline">
+          <input type="radio" name="verify" id="verify-text-message" value="text-message" required />
+          <label for="verify-text-message">Via a text message (SMS)</label>
+        </li>
+        <li class="form-control-inline">
+          <input type="radio" name="verify" id="verify-phone-call" value="phone" required />
+          <label for="verify-phone-call">Via a phone call</label>
+        </li>
+        <li class="form-control-inline">
+          <input type="radio" name="verify" id="verify-email" value="email" required />
+          <label for="verify-email">Via an email</label>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How should we contact you?</h2>
+      <ul>
+        <!-- this will generate more than one key value pair (same name for both checkboxes) so value is useful to know what options were selected by the user (not just true or false)")-->
+        <li class="form-control-inline">
+          <input type="checkbox" id="contact-email" name="contact" value="email" />
+          <label for="contact-email">Contact me via email</label>
+        </li>
+        <li class="form-control-inline">
+          <input type="checkbox" id="contact-phone" name="contact" value="phone" />
+          <label for="contact-phone">Contact me via phone</label>
+        </li>
+      </ul>
+    </section>
+
+    <hr>
+    <section>
+      <!-- this will generate only one key value pair, so value attribute is not necessary (on/off by default with name "terms")-->
+      <div class="form-control-inline">
+        <input type="checkbox" id="agree-terms" name="terms" />
+        <label for="agree-terms">Agree to terms?</label>
+      </div>
+    </section>
+
+    <section>
+      <!-- to overwrite the default button behavior (which is type="submit" if the button is inside a form) the type attribute should be changed, i.e.
+      <button type="button">submit</button> 
+
+      It is useful when a button is used to do something else than submitting the form.
+      Inside a form it can be utilized to create reset button (which automatically clears every input and selection inside a form):
+      -->
+      <button type="reset">reset</button>
+
+      <button>submit</button>
+
+    </section>
+
+  </form>
+
+
+</body>
+
+</html>

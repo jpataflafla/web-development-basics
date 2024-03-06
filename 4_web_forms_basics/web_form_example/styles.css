@@ -1,0 +1,75 @@
+body {
+  background-color: grey;
+  margin: 8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid gray;
+  padding: 0.25rem;
+  color: darkgray;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: lightblue;
+  color: darkblue;
+  border: 1px solid darkblue;
+}
+
+button {
+  display: block;
+  font: inherit;
+  color: white;
+  background-color: darkblue;
+  border: 1px solid darkblue;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0.2rem 0;
+}
+
+button:hover {
+  background-color: blue;
+  border: 1px solid blue;
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.7rem;
+}

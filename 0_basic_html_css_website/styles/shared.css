@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  background-color: rgb(233, 230, 210);
+  margin: 50px;
+}
+
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  color: red;
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 24px;
+  color: #303030;
+}
+
+a {
+  color: rgb(167, 55, 10);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

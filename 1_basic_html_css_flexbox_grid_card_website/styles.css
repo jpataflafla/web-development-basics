@@ -1,0 +1,100 @@
+#hero {
+  height: 800px;
+  background-image: url("/images/engine.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-content {
+  width: 900px;
+  background-color: rgba(192, 192, 13, 0.468);
+  box-shadow: 2px 4px 8px rgba(9, 9, 0, 0.89);
+  text-shadow: 2px 2px 4px black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px 0px;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+}
+
+#hero-content h1 {
+  color: #fff;
+  text-transform: lowercase;
+  font-size: 48px;
+  font-family: "Archivo Black", sans-serif;
+  margin: 0px;
+}
+
+#hero-content p {
+  color: #fff;
+  text-transform: lowercase;
+  font-size: 24px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+#hero-content a {
+  text-decoration: none;
+  background-color: rgb(255, 242, 0);
+  text-shadow: none;
+  padding: 12px 24px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.84);
+}
+
+#hero-content a:hover {
+  background-color: rgb(220, 209, 2);
+}
+
+#highlights {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(0deg, rgb(219, 215, 148), rgb(219, 217, 180));
+}
+
+#car-list-highlights {
+  list-style: none;
+  display: flex;
+  width: 90%;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.highlights hs {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40;
+  color: rgb(48, 45, 0);
+  margin: 24px 0;
+}
+
+.car-highlight {
+  margin: 0 20px;
+  /* text-transform: uppercase; */
+}
+
+.car-highlight img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 1px 2px 4px black;
+  border-radius: 4px;
+}
+
+.car-highlight p {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(26, 26, 26);
+  margin: 20px 0;
+}
+
+.car-highlight strong {
+  color: rgb(48, 45, 0);
+}

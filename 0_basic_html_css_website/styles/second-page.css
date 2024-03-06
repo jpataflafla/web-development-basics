@@ -1,0 +1,73 @@
+header {
+  margin-bottom: 65px;
+}
+
+header p {
+  margin-bottom: 36px;
+}
+
+h1 {
+  font-size: 42px;
+  color: rgb(189, 0, 136);
+  margin: 0px;
+}
+
+#description {
+  margin: 12px 0px;
+}
+
+a {
+  background-color: rgb(160, 10, 10);
+  color: white;
+  border-radius: 3px;
+  font-size: 24px;
+  padding: 4px 6px;
+  display: inline-block;
+  margin: 0px;
+}
+
+a:hover {
+  background-color: rgb(163, 43, 43);
+  text-decoration: none;
+}
+
+#upcoming-things {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 36px;
+  color: rgb(255, 64, 188);
+}
+
+ul {
+  /* list-style: square; */
+  list-style: none;
+  width: 500px;
+  margin: 36px auto 0 auto;
+  padding: 0px;
+}
+
+li {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: rgb(234, 140, 122);
+  padding: 3px;
+  border-radius: 5px;
+  margin: 8px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.upcoming-things-list {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 13px;
+  color: rgb(66, 0, 45);
+  width: 160px;
+  margin: 20px auto 0 auto;
+  text-align: left;
+}
+
+.thing-class {
+  margin: 12px;
+  color: rgb(70, 23, 19);
+}
+
+.highlight-goal {
+  background-color: rgb(238, 122, 99);
+}
